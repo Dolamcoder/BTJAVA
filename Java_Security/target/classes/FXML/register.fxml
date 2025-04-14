@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.registerController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="emailText" layoutX="104.0" layoutY="143.0" prefHeight="36.0" prefWidth="193.0" promptText="Email" />
+            <TextField fx:id="userNameText" layoutX="103.0" layoutY="197.0" prefHeight="36.0" prefWidth="193.0" promptText="Username" />
+            <PasswordField fx:id="pass1Text" layoutX="103.0" layoutY="253.0" prefHeight="36.0" prefWidth="193.0" promptText="Mật khẩu" />
+            <PasswordField fx:id="pass2Text" layoutX="103.0" layoutY="307.0" prefHeight="36.0" prefWidth="193.0" promptText="Xác nhận mật khẩu" />
+            <FontAwesomeIcon glyphName="USER" layoutX="162.0" layoutY="96.0" size="8em" />
+            <Button fx:id="dangKy" layoutX="170.0" layoutY="369.0" mnemonicParsing="false" onAction="#dangKy" text="Đăng ký" />
+            <Label fx:id="errorLabel" layoutX="107.0" layoutY="120.0" prefHeight="17.0" prefWidth="185.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
